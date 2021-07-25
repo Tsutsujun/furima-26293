@@ -16,3 +16,5 @@
 |born_day_id       |integer|null: false                           |
 
 ### Association
+- has many :items
+- has many :receipts
