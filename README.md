@@ -36,3 +36,6 @@
 ### Association
 - belongs_to :user
 - has_one :receipt
+
+
+## receipts-table
