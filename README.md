@@ -39,3 +39,8 @@
 
 
 ## receipts-table
+|Column |Type      |Options                                     |
+|-------|----------|--------------------------------------------|
+|user   |references|null: false, foreign_key: true              |
+|item   |references|null: false, unique: true, foreign_key: true|
+|address|references|null: false, unique: true, foreign_key: true|
