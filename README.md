@@ -1,5 +1,6 @@
 # FURIMA DataBase-design
 
+
 ## users-table
 |Column            |Type   |Options                               |
 |------------------|-------|--------------------------------------|
@@ -13,3 +14,5 @@
 |born_year_id      |integer|null: false                           |
 |born_month_id     |integer|null: false                           |
 |born_day_id       |integer|null: false                           |
+
+### Association
