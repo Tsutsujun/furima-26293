@@ -46,3 +46,6 @@
 |address|references|null: false, unique: true, foreign_key: true|
 
 ### Association
+- belongs_to :user
+- belongs_to :item
+- belongs_to :address
