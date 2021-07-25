@@ -18,3 +18,6 @@
 ### Association
 - has many :items
 - has many :receipts
+
+
+## items-table
