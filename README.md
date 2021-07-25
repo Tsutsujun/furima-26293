@@ -52,3 +52,11 @@
 
 
 ## addresses-table
+|Column                  |Type   |Options    |
+|------------------------|-------|-----------|
+|postcode                |string |null: false|
+|prefecture_id           |integer|null: false|
+|municipality            |string |null: false|
+|course_number           |string |null: false|
+|building_and_room_number|string |           |
+|phone_number            |string |null: false|
