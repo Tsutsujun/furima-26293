@@ -62,3 +62,4 @@
 |phone_number            |string |null: false|
 
 ### Association
+- has_one :receipt
