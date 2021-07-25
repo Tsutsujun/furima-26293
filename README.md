@@ -16,8 +16,8 @@
 |born_day_id       |integer|null: false                           |
 
 ### Association
-- has many :items
-- has many :receipts
+- has_many :items
+- has_many :receipts
 
 
 ## items-table
@@ -34,3 +34,5 @@
 |user               |references|null: false, foreign_key: true|
 
 ### Association
+- belongs_to :user
+- has_one :receipt
