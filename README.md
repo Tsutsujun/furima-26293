@@ -63,3 +63,6 @@
 
 ### Association
 - has_one :receipt
+
+
+## ER-diagram
