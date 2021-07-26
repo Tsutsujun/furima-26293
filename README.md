@@ -66,3 +66,4 @@
 
 
 ## ER-diagram
+![er](er.drawio.svg)
