@@ -7,6 +7,9 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module Furima26293
+  Rails.application.config.assets.configure do |env|
+    env.export_concurrent = false
+  end
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
@@ -23,8 +26,4 @@ module Furima26293
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
-end
-
-Rails.application.config.assets.configure do |env|
-  env.export_concurrent = false
 end
