@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Rails.application.config.assets.configure do |env|
+  env.export_concurrent = false
+end
+
 module Furima26293
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -16,10 +20,6 @@ module Furima26293
       g.javascripts false
       g.helper false
       g.test_framework false
-    end
-
-    Rails.application.config.assets.configure do |env|
-      env.export_concurrent = false
     end
 
     # Settings in config/environments/* take precedence over those specified here.
