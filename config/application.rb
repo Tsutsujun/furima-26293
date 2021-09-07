@@ -18,8 +18,6 @@ module Furima26293
       g.test_framework false
     end
 
-    config.assets.initialize_on_precompile = false
-
     Rails.application.config.assets.configure do |env|
       env.export_concurrent = false
     end
