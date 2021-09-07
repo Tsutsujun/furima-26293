@@ -74,7 +74,7 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (3.0.0)
-    concurrent-ruby (1.1.9)
+    concurrent-ruby (1.1.5)
     crass (1.0.6)
     devise (4.8.0)
       bcrypt (~> 3.0)
@@ -177,11 +177,12 @@ GEM
     ruby-progressbar (1.11.0)
     ruby_dep (1.5.0)
     rubyzip (2.3.2)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
-    sassc (2.4.0)
+    sass-rails (6.0.0.beta2)
+      sassc-rails (~> 2.1, >= 2.1.0)
+    sassc (2.0.1)
       ffi (~> 1.9)
-    sassc-rails (2.1.2)
+      rake
+    sassc-rails (2.1.0)
       railties (>= 4.0.0)
       sassc (>= 2.0)
       sprockets (> 3.0)
@@ -239,7 +240,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
-  concurrent-ruby (~> 1.1.5)
+  concurrent-ruby (= 1.1.5)
   devise
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
@@ -248,12 +249,13 @@ DEPENDENCIES
   rails (~> 6.0.0)
   rails_12factor
   rubocop
-  sass-rails (~> 6)
-  sassc (~> 2.0, >= 2.0.1)
+  sass-rails (= 6.0.0.beta2)
+  sassc (= 2.0.1)
+  sassc-rails (= 2.1.0)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sprockets (~> 3.7.2)
+  sprockets (= 3.7.2)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
