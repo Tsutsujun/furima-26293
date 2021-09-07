@@ -60,6 +60,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'sassc', '2.0.1'
 gem 'sassc-rails', '2.1.0'
-gem 'sprockets', '3.7.2'
 gem 'concurrent-ruby', '1.1.5'
 gem 'devise'
