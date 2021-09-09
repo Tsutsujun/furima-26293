@@ -11,8 +11,6 @@ module Furima26293
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    config.assets.initialize_on_precompile = false
-
     config.generators do |g|
       g.stylesheets false
       g.javascripts false
