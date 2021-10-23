@@ -11,9 +11,7 @@
 |given_name        |string |null: false                           |
 |family_name_kana  |string |null: false                           |
 |given_name_kana   |string |null: false                           |
-|born_year_id      |integer|null: false                           |
-|born_month_id     |integer|null: false                           |
-|born_day_id       |integer|null: false                           |
+|born_date         |date   |null: false                           |
 
 ### Association
 - has_many :items
