@@ -11,6 +11,8 @@ module Furima26293
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    config.autoload_paths += Dir["#{config.root}/app/validators"]
+
     config.generators do |g|
       g.stylesheets false
       g.javascripts false
