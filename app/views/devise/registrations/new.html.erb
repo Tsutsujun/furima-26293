@@ -1,8 +1,6 @@
 <%= render "shared/second-header"%>
 
-<%# 「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
-<%= form_with model: モデル名, url: 新規登録機能へのパス, class: 'registration-main', local: true do |f| %>
-<%# //「モデル名」にはUserモデルであれば@userを渡しましょう。「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
+<%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 <div class='form-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>
@@ -73,7 +71,7 @@
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label for="user_birth_date_1i" class="form-text">生年月日</label>
+      <label for="user_born_date_1i" class="form-text">生年月日</label>
       <span class="indispensable">必須</span>
     </div>
     <div class='input-birth-wrap'>
@@ -87,7 +85,7 @@
                     start_year: 1930,
                     end_year: (Time.now.year - 5),
                     date_separator: '%s'),
-                  "<p> <label for="user_birth_date_1i">年</label> </p>", "<p> <label for="user_birth_date_2i">月</label> </p>") + "<p> <label for="user_birth_date_3i">日</label> </p>" %>
+                  "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
     </div>
     <p class='info-text'>※ 本人情報は正しく入力してください。会員登録後、修正するにはお時間を頂く場合があります。</p>
   </div>
