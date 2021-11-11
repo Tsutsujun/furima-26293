@@ -1,7 +1,9 @@
 class DateCheckValidator < ActiveModel::EachValidator
 
   def validate_each(record, attribute, value)
-    year, month, day = value.split('-')
+    year  = value[1]
+    month = value[2]
+    day   = value[3]
     if year.blank? || month.blank? || day.blank?
       record.errors[attribute] << "Birth-date can't be blank."
     elsif !(Date.valid_date?(year.to_i, month.to_i, day.to_i))

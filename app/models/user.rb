@@ -16,5 +16,5 @@ class User < ApplicationRecord
     end
   end
 
-  validates :born_date, date_check: true
+  validates :born_date_before_type_cast, date_check: true
 end
