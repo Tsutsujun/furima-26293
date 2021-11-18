@@ -14,7 +14,7 @@ class User < ApplicationRecord
       validates :family_name_kana
       validates :given_name_kana
     end
+    validates :born_date_before_type_cast, date_check: true
   end
 
-  validates :born_date_before_type_cast, date_check: true
 end

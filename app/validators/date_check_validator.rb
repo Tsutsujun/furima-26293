@@ -1,6 +1,8 @@
 class DateCheckValidator < ActiveModel::EachValidator
 
   def validate_each(record, attribute, value)
+    return if value.blank?
+
     year  = value[1]
     month = value[2]
     day   = value[3]
