@@ -31,3 +31,7 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    attributes:
+      user:
+        born_date_before_type_cast: "Born-date"
