@@ -7,9 +7,9 @@ class DateCheckValidator < ActiveModel::EachValidator
     month = value[2]
     day   = value[3]
     if year.blank? || month.blank? || day.blank?
-      record.errors[attribute] << "can't be blank."
+      record.errors.add(attribute, :blank, message: "can't be blank")
     elsif !(Date.valid_date?(year.to_i, month.to_i, day.to_i))
-      record.errors[attribute] << "can't be incorrect."
+      record.errors.add(attribute, :incorrect, message: "can't be incorrect")
     end
   end
 
